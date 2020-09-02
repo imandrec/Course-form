@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var email = $('.email').val()
 		var name = $('.name').val()
 		var lastname = $('.lastname').val()
-		var radiogroup1 = $('.radiogroup1').val()
+		var date = $('.date').val()
 		var country = $('.country').val()
 		var subscribe = $('.subscribe').val()
 		
