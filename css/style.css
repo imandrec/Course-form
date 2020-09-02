@@ -106,7 +106,7 @@ body {
   border: 1px solid #f5ba1a;
   background: #fafafa;
 }
-.box input[type="submit"] {
+.box button{
   background: #819FF7;
   height: 35px;
   line-height: 35px;
@@ -123,10 +123,10 @@ body {
   -ms-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
 }
-.box input[type="submit"]:hover {
+.box button:hover {
   background: #2E64FE;
 }
-.box input[type="submit"]:focus {
+.box button:focus {
   background: #2E64FE;
 }
 .box input[type="checkbox"], .box input[type="radio"] {
@@ -377,7 +377,7 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .form_wrapper .col_half {
+  .box .col_half {
     width: 100%;
     float: none;
   }
@@ -391,7 +391,4 @@ body {
     border-left: none;
   }
 
-  .remember_me {
-    padding-bottom: 20px;
-  }
 }
