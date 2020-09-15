@@ -2,10 +2,22 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
   background: #E6E6E6;
 }
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
 .content {
   background: #fff;
   width: 1000px;
@@ -26,7 +38,9 @@ body {
 .content h2{
 	font-family: "Poppins", sans-serif;
 	text-align: center;
+	font-size: 2em;
 }
+
 .content p{
 	font-family: "Poppins", sans-serif;
 	font-size: 1em;
@@ -376,19 +390,43 @@ body {
     opacity: 1;
   }
 }
-@media (max-width: 600px) {
-  .box .col_half {
+@media (max-width: 400px) {
+	.box .col_half {
     width: 100%;
     float: none;
   }
 
-  .bottom_row .col_half {
+	.bottom_row .col_half {
     width: 50%;
     float: left;
   }
 
-  .form_container .row .col_half.last {
+	.form_container .row .col_half.last {
     border-left: none;
   }
+	.content p{
+	font-size: 0.7em;
+}
+	.content li{
+	font-family: "Poppins", sans-serif;
+	font-size: 0.7em;
+}
+	.content h2{
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	font-size: 1.3em;
+}
 
+	.box input[type="text"], .box input[type="email"], .box input[type="password"] {
+	width: 100%;
+	padding: 8px 10px 9px 35px;
+	height: 20px;
+}
+.box .input_field {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-animation: bounce 0.6s ease-out;
+  animation: bounce 0.6s ease-out;
+}
 }
